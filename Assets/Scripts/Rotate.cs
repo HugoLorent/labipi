@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rotate : MonoBehaviour
 {
 
-    float speed = 50.0f;
+    float speed = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -40,8 +40,8 @@ public class Rotate : MonoBehaviour
         float rotX = Input.GetAxis("Mouse X")* speed * Mathf.Deg2Rad;
         float rotY = Input.GetAxis("Mouse Y")* speed * Mathf.Deg2Rad;
 
-        transform.RotateAround(Vector3.back, -rotX / speed);
-        transform.RotateAround(Vector3.right, rotY / speed);
+        transform.RotateAround(Vector3.back, -rotX);
+        transform.RotateAround(Vector3.right, rotY);
 
         Debug.LogWarning(rotY);
     }
