@@ -42,7 +42,5 @@ public class Rotate : MonoBehaviour
 
         transform.RotateAround(Vector3.back, -rotX);
         transform.RotateAround(Vector3.right, rotY);
-
-        Debug.LogWarning(rotY);
     }
 }
