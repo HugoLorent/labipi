@@ -13,6 +13,6 @@ public class ArrivalCollision : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Gagné !");
-        SceneManager.LoadScene("StartedScene");
+        SceneManager.LoadScene("WinnerScene");
     }
 }
